@@ -1,0 +1,17 @@
+.box{
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(128, 128, 128,0.5);
+    box-shadow: 2px 2px 2px black;
+}
+h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+h3{
+    font-size: 20px;
+}

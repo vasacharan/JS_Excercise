@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SplitBill</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Split Bill</h3>
+            <input type="text" placeholder="Enter amount" id="numAmount"><br>
+                <p id="errormsg"></p>
+            <input type="text" placeholder="Number of Persons" id="numPersons"><br><br>
+                <button onclick="splitcal()">click</button><button onclick="empty()"><i class="fa-sharp fa-solid fa-rotate-right"></i></button><br><br>
+            <input type="text" placeholder="Splited value for each" id="splitAmount">
+    </div>
+    <div>
+        <input type="text" id="sample1">
+        <input type="text" id="sample2">
+        <button onclick="check()">Click</button>
+    </div>
+    
+
+    <script src="./input.js"></script>
+</body>
+</html>
