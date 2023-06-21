@@ -1,4 +1,8 @@
+body{
+    background-color: rgb(146, 177, 179,0.4);
+}
 .box{
+    margin: 200px auto;
     width: 350px;
     height: auto;
     border: 1px solid black;
@@ -14,4 +18,23 @@ h2{
 }
 h3{
     font-size: 20px;
+}
+input{
+    height: 20px;
+    background-color: rgb(122, 121, 121,0.4);
+    border: none;
+    color: white;
+}
+hr{
+    border-color: black;
+    width: 70%;
+}
+button{
+    margin-right: 5px;
+    background-color: rgba(116, 70, 168,0.4);
+    border-style: none;
+    border-color: blueviolet;
+    padding: 8px 12px;
+    border-radius: 5px;
+    
 }

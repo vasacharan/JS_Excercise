@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random sum</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="box">
-        <marquee><h2>sum of Random numbers</h2></marquee>
-        <input type="text" id="random1" placeholder="Random value1"><button onclick="randomValue1()">Click1</button>
-        <h3>+</h3>
-        <input type="text" id="random2" placeholder="Random value2"><button onclick="randomValue2()">Click2</button><br><br>
-
-        Total:<input type="text" id="sum">
-        <p id="sum1"></p>
-
+        <h2>sum of Random numbers</h2>
+        <input type="text" id="random1" placeholder="Random value1">
+        <p><i class="fa-sharp fa-solid fa-plus"></i></p>
+        <input type="text" id="random2" placeholder="Random value2"><br><br>
+        <input type="text" placeholder="Sum" id="sum"><br><br>
+        <button onclick="randomValue()">Click</button><button onclick="addValue()">Add</button><br><br>
+        <hr>
+        <p id="date"></p>
     </div>
     <script src="./script.js"></script>
 </body>
