@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tax Calculation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+       
+            Employee Name: <input type="text" placeholder="Employee Name" id="EmpName"><br><br>
+            Emp Salary: <input type="text" placeholder="Salary" id="SalaryValue"><br><br>
+            <button onclick="taxCalculator(document.getElementById('EmpName').value,document.getElementById('SalaryValue').value)">Tax Karo</button>
+                <p id="details"></p>
+                    Deduction Less than 3 LPA: <input type="text" placeholder="Deduction" id="deduction1"><br><br>
+                    Deduction Below 6 LPA: <input type="text" placeholder="Deduction" id="deduction2"><br><br>
+                    Total Deduction: <input type="text" placeholder="Deduction" id="deduction3"><br><br>
+                    
+                    <button class='print' onclick="window.print()">Print</button>
+    </div>
+            <div class="text">
+                <p>Tax Calculation Rules:</p>
+                <ul>
+                    <li>Salary less than 3 LPA no tax Deduction.</li>
+                    <li>Salary less than that 6 LPA tax deduction is 10% over 3 LPA.</li>
+                    <li>Salary is grater than 6 LPA than tax 20% on excess.</li>
+                </ul>
+            </div>
+        <p class="taxdate" id="date"></p>
+    <script src="./TaxScript.js"></script>
+</body>
+</html>

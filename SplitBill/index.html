@@ -8,16 +8,18 @@
     <title>SplitBill</title>
 </head>
 <body>
+    <div class="daynight"><button id="toggle1">Dark</button><button id="toggle2">Light</button></div>
     <div class="container">
         <h3>Split Bill</h3>
             <input type="text" placeholder="Enter amount" id="numAmount">
                 <p id="errormsg1"></p>
             <input type="text" placeholder="Number of Persons" id="numPersons">
                 <p id="errormsg2"></p>
-                <button onclick="splitcal()">click</button><button onclick="empty()"><i class="fa-sharp fa-solid fa-rotate-right"></i></button><br><br>
+                <button class='split' onclick="splitcal()">click</button><button class='split' onclick="empty()"><i class="fa-sharp fa-solid fa-rotate-right"></i></button><br><br>
             <input type="text" placeholder="Splited value for each" id="splitAmount">
             <span id="date"></span>
     </div>
+    
     <script src="./input.js"></script>
 </body>
 </html>

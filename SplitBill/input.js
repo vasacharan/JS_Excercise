@@ -28,3 +28,14 @@ const printDate = (()=>{
     return document.getElementById('date').innerHTML = date;
 })();
 
+
+let darkcol = document.getElementById('toggle1');
+darkcol.addEventListener('click', changeCol=()=>{
+document.body.style.backgroundColor = 'black';
+});
+
+let lightcol = document.getElementById('toggle2');
+lightcol.addEventListener('click', changeCols=()=>{
+    document.body.style.backgroundColor = 'white';
+    
+    });
