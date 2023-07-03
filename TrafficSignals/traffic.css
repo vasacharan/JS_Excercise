@@ -1,0 +1,58 @@
+.container{
+    position: absolute;
+}
+.box1{
+    width: 80px;
+    height: 220px;
+    border: 1px solid black;
+    background-image: url(../traffic-red.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box2{
+    width: 80px;
+    height: 220px;
+    border: 1px solid black;
+    background-image: url(../traffic-yellow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box3{
+    width: 80px;
+    height: 220px;
+    border: 1px solid black;
+    background-image: url(../traffic-green.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    width: 120px;
+    height: 220px;
+    margin-left: 120px;
+    position: absolute;
+    border: 1px solid black;
+    
+}
+.traffic-lights{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    list-style: none;
+    line-height: 4rem;
+    text-align: center;
+}
+button{
+    display: inline-block;
+}
+.list-red,.list-yellow,.list-green{
+    margin-left: -40px;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
