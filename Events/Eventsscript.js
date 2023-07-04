@@ -1,4 +1,4 @@
-// 2Q Write a function named reverseString that takes a string as an argument and returns the reversed string.
+3// 2Q Write a function named reverseString that takes a string as an argument and returns the reversed string.
 
 // function reverseString(str){
 //     let newString = "";

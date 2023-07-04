@@ -18,9 +18,10 @@ form.addEventListener('submit',(e)=>{
         console.log('Error found');
     }else{
         window.location="https://www.facebook.com";
-    }
+    } 
     
    
+    
     
 });
 
@@ -61,14 +62,14 @@ form.addEventListener('submit',(e)=>{
                     document.querySelector('#password').classList.remove('sus','err');
                     document.querySelector('#password').classList.add('err');
                     
-                    console.log('hello');
+            
                 document.getElementById('error3').innerHTML = 'Password Should be between 8 to 16 chars';
                 i=0;
 
                 } else{
                     document.querySelector('#password').classList.remove('sus','err');
                     document.querySelector('#password').classList.add('sus');
-                    console.log('hi');
+            
                   i=0;
                  }
 
@@ -94,5 +95,4 @@ form.addEventListener('submit',(e)=>{
 username.addEventListener('keyup',validateInputs);
 password.addEventListener('keydown',validateInputs);
 password2.addEventListener('keyup',validateInputs);
-
 
