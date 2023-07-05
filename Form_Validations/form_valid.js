@@ -4,8 +4,6 @@ const email = document.getElementById('Email');
 const password = document.getElementById('password');
 const mobileno = document.getElementById('mbno');
 
-
-
 form.addEventListener('submit',(e)=>{
 e.preventDefault();
 
@@ -55,7 +53,7 @@ function validateNameInput(){
             }
             return inputstatus;
         }
-
+        
         function validatePasswordInput(){
             const validPassword = /^[a-zA-Z0-9_@]{8,16}$/;
 
@@ -65,7 +63,7 @@ function validateNameInput(){
                 inputstatus = true;
             }else{
                 password.style.outlineColor = "red";
-                document.getElementById('pw_error').innerText = `password should be special chars like:'@','_' `;
+                document.getElementById('pw_error').innerText = `password'@','_' letters also accepted`;
                 inputstatus = false;
             }
             return inputstatus;
@@ -75,18 +73,16 @@ function validateNameInput(){
             const validMbno = /^[6-9][0-9]{9}$/;
 
             if(validMbno.test(mbno.value)){
-                password.style.outlineColor = "green";
+                mbno.style.outlineColor = "green";
                 document.getElementById('mbno_error').innerText = `valid Mobile number`;
                 inputstatus = true;
             }else{
-                password.style.outlineColor = "red";
+                mbno.style.outlineColor = "red";
                 document.getElementById('mbno_error').innerText = `Enter valid Indian Mobile number`;
                 inputstatus = false;
             }
             return inputstatus;
         }
-
-      
         username.addEventListener('keyup', validateNameInput);
         email.addEventListener('keyup',validateEmailInput);
         password.addEventListener('keyup',validatePasswordInput);
