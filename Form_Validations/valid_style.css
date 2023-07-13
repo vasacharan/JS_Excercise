@@ -22,9 +22,7 @@ h3{
 .input-form{
     margin-left: 20px;
     margin-top: 20px;
-   
 }
-
 input{
     width: 350px;
     height: 30px;
@@ -33,11 +31,17 @@ input{
     margin-top: 8px;
 }
 #name_error,#email_error,#pw_error,#mbno_error{
-    color: red;
+    color: orangered;
     font-size:smaller;
 }
 
-.email_sus,.pw_sus,.mbno_sus{
+#sus1,#sus2,#sus3,#sus4{
     color:green;
     font-size: smaller;
+}
+.ip{
+    outline-color: orangered;
+}
+.validate{
+    border-color: red;
 }
